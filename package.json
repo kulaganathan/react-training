@@ -1,10 +1,11 @@
 {
   "name": "react-template",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "scripts": {
-    "webpack": "./node_modules/.bin/webpack -d --watch",
-    "start": "./node_modules/.bin/webpack-dev-server"
+    "build": "./node_modules/.bin/webpack -d --watch",
+    "start": "./node_modules/.bin/webpack-dev-server",
+    "lint": "./node_modules/.bin/eslint --init"
   },
   "license": "MIT",
   "devDependencies": {
@@ -12,6 +13,12 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
     "path": "^0.12.7",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
