@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-export default class Wrapper extends React.component{
+import Header from './header/header.jsx';
+export default class Wrapper extends React.Component{
   render() {
-    return (<h1>Hello World!!!</h1>);
+    return (<Header/>);
   }
 }
 
