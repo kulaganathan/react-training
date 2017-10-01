@@ -5,10 +5,10 @@ var BUILD_DIR = path.resolve(__dirname, 'static');
 var APP_DIR = path.resolve(__dirname, 'src');
 
 var config = {
-  entry: 'src/index.jsx',
+  entry: './src/index.jsx',
   output: {
     path: BUILD_DIR,
-    filename: '/bundle.js'
+    filename: './bundle.js'
   },
   module : {
     loaders : [
@@ -16,11 +16,6 @@ var config = {
         test : /\.jsx?/,
         include : APP_DIR,
         loader : 'babel-loader'
-      },
-      {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'eslint-loader'
       }
     ]
   }
